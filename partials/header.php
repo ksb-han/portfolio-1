@@ -17,13 +17,19 @@
 <body class="content">
     <header class="header">
         <nav class="nav">
-            <!-- <div > -->
             <ul class="nav__links">
-                <li href="#about-me" class="nav__link">About Me <span></span></li>
-                <li href="#skills" class="nav__link">Skills <span></span></li>
-                <li href="#portfolio" class="nav__link">Portfolio <span></span></li>
-                <li href="#contact-info" class="nav__link">Contact Information <span></span></li>
+                <li>
+                    <a href="#about-me" class="nav__link">About Me <span></span></a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav__link">Skills <span></span></a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav__link">Portfolio <span></span></a>
+                </li>
+                <li>
+                    <a href="#contact-info" class="nav__link">Contact Information <span></span></a>
+                </li>
             </ul>
-            <!-- </div> -->
         </nav>
     </header>
