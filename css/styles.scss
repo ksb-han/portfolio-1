@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
 }
 
 body {
@@ -38,6 +39,24 @@ iframe {
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+
+p {
+    max-width: 70%;
+    font-size: 1.25rem;
+
+    & span {
+        color: var(--colour-orange);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 }
 
 .content {
@@ -130,6 +149,6 @@ img {
     }
 }
 
-.section {
-    min-height: 100lvh;
-}
+// .section {
+//     min-height: 100lvh;
+// }
