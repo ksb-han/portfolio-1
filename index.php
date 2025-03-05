@@ -13,6 +13,12 @@
   </section>
   <section class="section" id="skills">
     <h1>Skills</h1>
+    <div class="skills">
+      <i class="ri-javascript-fill"></i>
+      <i class="ri-html5-fill"></i>
+      <i class="ri-php-fill"></i>
+      <i class="ri-css3-fill"></i>
+    </div>
   </section>
   <section class="section" id="portfolio">
     <h1>Portfolio</h1>

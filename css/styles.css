@@ -119,4 +119,8 @@ p:not(:last-child) {
 .header .footer i:hover {
   color: var(--colour-orange);
   transition: 300ms ease-out;
+}
+
+.skills i {
+  font-size: 5rem;
 }/*# sourceMappingURL=styles.css.map */

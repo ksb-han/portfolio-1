@@ -152,3 +152,9 @@ p {
 // .section {
 //     min-height: 100lvh;
 // }
+
+.skills {
+    & i {
+        font-size: 5rem;
+    }
+}
