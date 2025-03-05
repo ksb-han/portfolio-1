@@ -46,15 +46,17 @@ img {
   position: relative;
   background-image: url("../images/texture.png");
   background-attachment: fixed;
-  background-color: white;
+}
+.header .side-bar {
+  position: sticky;
+  top: 0;
 }
 .header .nav {
-  position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 90lvh;
+  max-height: 90lvh;
 }
 .header .nav__links {
   display: flex;
@@ -73,12 +75,33 @@ img {
 .header .nav__link a {
   color: var(--colour--white);
   text-decoration: none;
+  transition: 300ms ease-in;
 }
 .header .nav__link a:hover {
   color: var(--colour-orange);
+  transition: 300ms ease-out;
 }
 .header .nav__link:not(:last-child) {
   padding-bottom: 0.5rem;
+}
+.header .footer {
+  min-height: 10lvh;
+  max-height: 10lvh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.header .footer a {
+  text-decoration: none;
+  color: var(--colour--white);
+}
+.header .footer i {
+  font-size: 3rem;
+  transition: 300ms ease-in;
+}
+.header .footer i:hover {
+  color: var(--colour-orange);
+  transition: 300ms ease-out;
 }
 
 .section {

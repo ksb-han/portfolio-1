@@ -52,17 +52,21 @@ img {
     background-image: url("../images/texture.png");
     background-attachment: fixed;
 
-    background-color: white;
+    & .side-bar {
+        position: sticky;
+        top: 0;
+
+        // display: grid;
+        // grid-template-rows: 0.7fr 0.3fr;
+    }
 
     & .nav {
-        position: sticky;
-        top: 50%;
-        transform: translateY(-50%);
-
-
         display: flex;
         justify-content: center;
         align-items: center;
+
+        min-height: 90lvh;
+        max-height: 90lvh;
 
         &__links {
             display: flex;
@@ -72,6 +76,7 @@ img {
         &__link {
             font-size: 1.75rem;
             width: fit-content;
+
 
             & span {
                 display: block;
@@ -83,13 +88,43 @@ img {
                 color: var(--colour--white);
                 text-decoration: none;
 
+                transition: 300ms ease-in;
+
                 &:hover {
                     color: var(--colour-orange);
+
+                    transition: 300ms ease-out;
                 }
             }
 
             &:not(:last-child) {
                 padding-bottom: 0.5rem;
+            }
+        }
+    }
+
+    & .footer {
+        min-height: 10lvh;
+        max-height: 10lvh;
+
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        & a {
+            text-decoration: none;
+            color: var(--colour--white);
+        }
+
+        & i {
+            font-size: 3rem;
+
+            transition: 300ms ease-in;
+
+            &:hover {
+                color: var(--colour-orange);
+
+                transition: 300ms ease-out;
             }
         }
     }
